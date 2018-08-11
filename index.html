@@ -5,8 +5,6 @@
 	<link type="text/css" rel="stylesheet" href="assets/pageStyle.css"/>
 	<meta charset="utf-8">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 	<title>David Adams</title>
 </head>
 <body>
@@ -32,16 +30,25 @@
 	      	<li><a><img class='logos' src='images/css3-logo.png' alt='CSS3' title='CSS3'></a></li>
 	        <li><a><img class='logos' src="images/javascript-logo.png" alt="JavaScript" title='JavaScript'></a></li>
 	        <li><a><img class='logos' src="images/jquery-logo.png" alt="jQuery" title='jQuery'></a></li>
-	        <li><a><img class='logos' src="images/git-logo.png" alt="Git" title='Git'></a></li>
-	        <li><a><img class='logos' src="images/github-logo.png" alt="Github" title='Github'></a></li>
 	        <li><a><img class='logos' src="images/heroku-logo.png" alt="Heroku" title='Heroku'></a></li>
 	        <li><a><img class='logos' src="images/rspec-logo.png" alt="RSpec" title='RSpec'></a></li>
 	        <li><a><img class='logos' src="images/react-logo.png" alt="React" title='React'></a></li>
 	        <li><a><img class='logos' src="images/postgresql-logo.png" alt="PostgresQL" title='PostgresQL'></a></li>
+	        <li><a><img class='logos' src="images/slack-logo.png" alt="Slack" title='Slack'></a></li>
+	        <li><a><img class='logos' src="images/git-logo.png" alt="Git" title='Git'></a></li>
+	        <li><a><img class='logos' src="images/github-logo.png" alt="Github" title='Github'></a></li>
 	      </ul>
 	      <ul class="nav navbar-nav navbar-right">
 	      	<li></li>
-          <li>Email: david.riding.rails@gmail.com</li>
+	      	<li class="dropdown">
+          	<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><img class='logos' src='images/envelope.png' alt='Email' title='My Email'><span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a>Email:</a></li>
+            <li><a id="myEmail">david.riding.rails@gmail.com</a></li>
+            <li><center><button class='btn btn-primary' id="copyMyEmail">Copy Email</button></center></li>
+          </ul>
+        	</li>
+          <li><a href='https://github.com/DavidPAdams' target='blank'><img class='logos' src='images/octocat.png' alt='httbs://github.com/DavidPAdams' title='Checkout My Code'></a></li>
           <li><a href='https://www.linkedin.com/in/david-on-rails' target='blank'><img class='logos' src='images/linkedin-logo.png' alt='https://www.linked.com/in/david-on-rails' title='Connect With Me'></a></li>
 	      </ul>
 	    </div>
@@ -52,5 +59,8 @@
 			<p>I am David, I like to code with Ruby on Rails</p>
 		</div>
 	</div>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<script src='assets/dapage.js'></script>
 </body>
 </html>
