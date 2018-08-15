@@ -4,6 +4,10 @@ body, html {
   font-family: Arial;
 }
 
+body {
+  background: transparent;
+}
+
 .bg {
   /* The image used */
   background-image: url("../images/caribbean.jpg");
@@ -16,10 +20,25 @@ body, html {
   background-repeat: no-repeat;
   background-size: cover;
 }
-p {
-  padding: 10%;
+
+div.col {
+  background-color: rgba(255, 255, 255, 0.0);
+  border-radius: 20px;
+  padding: 10px;
+  margin: 10px;
+  color: white;
+  border: none;
 }
 
 .logos {
   height: 25px;
+}
+
+p#objective {
+  font-size: 1.15em;
+  line-height: 1.5em;
+}
+
+p#background {
+  line-height: 1.5em;
 }
