@@ -5,20 +5,17 @@ body, html {
 }
 
 body {
+  padding-top: 35px;
   background: transparent;
 }
 
-.bg {
-  /* The image used */
-  background-image: url("../images/caribbean.jpg");
-
-  /* Full height */
-  height: 100%; 
-
-  /* Center and scale the image nicely */
-  background-position: center;
-  background-repeat: no-repeat;
+div.bg {
+  background: url("../images/caribbean.jpg") no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
   background-size: cover;
+  color: #000;  
 }
 
 div.col {
@@ -41,4 +38,10 @@ p#objective {
 
 p#background {
   line-height: 1.5em;
+}
+
+.mug {
+  padding-top: 35px;
+  padding-left: 25px;
+  max-height: 200px;
 }
