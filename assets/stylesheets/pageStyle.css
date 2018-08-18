@@ -23,7 +23,7 @@ div.col {
   border-radius: 20px;
   padding: 10px;
   margin: 10px;
-  color: white;
+  color: navy;
   border: none;
 }
 
@@ -34,6 +34,7 @@ div.col {
 p#objective {
   font-size: 1.15em;
   line-height: 1.5em;
+  color: navy;
 }
 
 p#background {
