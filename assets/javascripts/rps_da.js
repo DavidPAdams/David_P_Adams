@@ -82,7 +82,7 @@ const showScore = function(){
 const showResults = function(winr){
 	var result = '';
 	if(winr==0){
-		result = "No winner, it is a tie each with"+player.hand;
+		result = "No winner, it is a tie each with "+player.hand;
 		document.getElementsByClassName("stats")[0].style.visibility="visible";
 		document.getElementById("results").innerHTML=result;
 	} else if(winr==1){
