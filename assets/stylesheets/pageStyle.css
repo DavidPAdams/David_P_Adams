@@ -46,3 +46,8 @@ p#background {
   padding-left: 25px;
   max-height: 200px;
 }
+
+.pick {
+  height: 80px;
+  padding: 15px;
+}
