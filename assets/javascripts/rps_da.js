@@ -32,7 +32,8 @@ const capFirst = function(str) {
 };
 
 const getPlayerName = function(){
-	str = prompt("Welcome player, please enter your first name:", "John").toLowerCase();
+	// str = prompt("Welcome player, please enter your first name:", "John").toLowerCase();
+	let str = "guest";
 	str.length>0 ? player.name = capFirst(str) : player.name = "John";
 //console.log(playerName.length);
 	var playButton = document.getElementById("wanna_play");
