@@ -105,10 +105,105 @@
 					</div>
 				</div>
 			</div>
+			<div class="row">
+				<div class="col-md-1"></div>
+				<div class="col-md-10">
+					<div class="col well"> 
+						<div id='root'></div>
+					</div>
+				</div>
+			</div>
 		</div>
 	</div>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
   <script src='assets/javascripts/dapage.js'></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/react/15.4.2/react.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/react/15.4.2/react-dom.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/babel-standalone/6.21.1/babel.min.js"></script>
+  <script type='text/babel'>
+  	class App extends React.Component {
+		  constructor(){
+		    super();
+		    this.state = {
+		      data: {
+		        colA: ['One might say, ','Aesthetically speaking, ','On the other hand, ', 'Based upon interdisciplinary considerations, ', 'With respect sensitive to network scale, ', 'Indubitably, ', 'Above and beyond plebeian interface objectives, ', 'Beyond the horizon of human inellect, ', 'Interdimensionally speaking, ', 'Obviously, in the final rationalization, '],
+		        colB: ['the massing of major class elements ','the introduction of synaptic brutalism ','the visual treatment of the secondary client interaction ', 'the initial stage of conceptual development ', 'the by-product of recursive packet gesticulation ', 'the life-cycle cost control ', 'the just-in-time production environment impact expectation ', 'the requirement of energy entropy conservation ', 'the virtual dynamic interaction analysis ', 'the internal use of adjacencies and circulation '],
+		        colC: ['must utilize and be functionally interwoven with ','maximizes the real probability of cost overruns regarding ','adds specific critical path events to ', 'necessitates that urgent runtime considerations be made of ', 'requires exhaustive trade-off sequences to arrive at ', 'is further compounded by taking into account ', 'presents extremely synergistic challenges to ', 'introduces the critical necessity to subtract from ', 'imposes smothering configuration constraints upon ', 'adds underdriving multi-dimensional constraints to '],
+		        colD: ['the sophisticated abstract design solution.', 'the anticipated degree of human involvement.', 'the acuteness of the conflict gradient.', 'the pragmatics of value engineering and refactored metrics.', 'the final quantitative analysis.', 'the evolution of performance specifications.', 'the philosophy of commonality and standardization.', 'the encapsulation of true fecundity in the state of the interface.', 'the creation of an immutable monument to codified posterity.', 'the convergence of the final aberration.'],
+		        colY: ['Shutka NaVas', 'Txantxa Duzu', 'Vicc van Rajtad', 'Sio Kweli', 'Uomo diPosta', 'Ibu Jari Kaki', 'Smerdyuchi Nohy', 'Nioi Ashi', 'Cheung Rongkosaeal', 'Tóu Huà Shāng']
+		      },
+		      partA: 'a',
+		      partB: 'b', 
+		      partC: 'c',
+		      partD: 'd',
+		      partY: 'y',
+		      again: false
+		    }
+		  }
+
+		  another = () => { 
+		    this.setState({again: true});
+		  };
+
+		  newPhraseSet = () => {
+		    let randNum = () => {
+		      return Math.floor(Math.random()*10);
+		    };
+		    const pA = this.state.data.colA[randNum()];
+		    const pB = this.state.data.colB[randNum()];
+		    const pC = this.state.data.colC[randNum()];
+		    const pD = this.state.data.colD[randNum()];
+		    const pY = this.state.data.colY[randNum()];
+		    this.setState(
+		      {
+		        partA: pA,
+		        partB: pB,
+		        partC: pC,
+		        partD: pD,
+		        partY: pY
+		      }
+		    )
+		  }
+
+		  componentWillMount = () => {
+		    this.newPhraseSet();
+		  }
+
+
+		  render() {
+		    let dataSet = {
+		      bitA: this.state.partA,
+		      bitB: this.state.partB,
+		      bitC: this.state.partC,
+		      bitD: this.state.partD,
+		      bitY: this.state.partY};
+		    console.log(dataSet);
+		    return (
+		      <div>
+		        <Phrase propData={dataSet} newPhraseSet={this.newPhraseSet}/>
+		      </div>
+		    );
+		  }
+		}
+
+		class Phrase extends React.Component {
+		  constructor(props){
+		    super(props);
+		    this.state = {}
+		  }
+		  
+		  render() {
+
+		    return (
+		      <div>
+		        <button className="btn btn-info btn-xs" onClick={this.props.newPhraseSet}> Words to Consider </button>
+		        <p>{this.props.propData.bitA + this.props.propData.bitB + this.props.propData.bitC + this.props.propData.bitD + '  - ' + this.props.propData.bitY}</p>
+		      </div>
+		    );
+		  }
+		}
+
+		ReactDOM.render(<App />, document.getElementById('root'));
+  </script>
 </body>
 </html>

@@ -51,3 +51,7 @@ p#background {
   height: 80px;
   padding: 15px;
 }
+
+#root {
+  font-size: 1.25em;
+}
