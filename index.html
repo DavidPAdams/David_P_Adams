@@ -1,65 +1,58 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 	<link type="text/css" rel="stylesheet" href="assets/stylesheets/pageStyle.css"/>
 	<meta charset="utf-8">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"/>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 	<title>David Adams</title>
 </head>
 <body>
 	<div class="bg">
-		<nav class="navbar navbar-default navbar-fixed-top">
-	  	<div class="container-fluid">
-		    <div class="navbar-header">
-		      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-	  	      <span class="sr-only">Toggle navigation</span>
-	    	    <span class="icon-bar"></span>
-	      	  <span class="icon-bar"></span>
-	        	<span class="icon-bar"></span>
-		      </button>
-		      <a class='navbar-brand' href='#'>David Adams</a>
-	  	  </div>
-		    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-		      <ul class="nav navbar-nav">
-	  	      <li><a>Technologies:</a></li>	      	
-	    	    <li><a><img class='logos' src="assets/images/ruby-logo.png" alt="Ruby" title='Ruby'></a></li>
-		        <li><a><img class='logos' src="assets/images/rails-logo.png" alt="Rails" title='Rails'></a></li>
-		      	<li><a><img class='logos' src='assets/images/java-logo.png' alt='Java' title='Java'></a></li>
-		      	<li><a><img class='logos' src='assets/images/spring-boot-logo.png' alt='Spring Boot' title='Spring Boot'></a></li>
-		      	<li><a><img class='logos' src='assets/images/junit5-logo.png' alt='JUnit5' title='JUnit5'></a></li>
-<!-- 		      	<li><a><img class='logos' src='assets/images/html-logo.png' alt='HTML5' title='HTML5'></a></li>
-		      	<li><a><img class='logos' src='assets/images/css3-logo.png' alt='CSS3' title='CSS3'></a></li> -->
-		        <li><a><img class='logos' src="assets/images/javascript-logo.png" alt="JavaScript" title='JavaScript'></a></li>
-<!-- 		        <li><a><img class='logos' src="assets/images/jquery-logo.png" alt="jQuery" title='jQuery'></a></li> -->
-		        <li><a><img class='logos' src="assets/images/heroku-logo.png" alt="Heroku" title='Heroku'></a></li>
-		        <li><a><img class='logos' src="assets/images/rspec-logo.png" alt="RSpec" title='RSpec'></a></li>
-		        <li><a><img class='logos' src="assets/images/react-logo.png" alt="React" title='React'></a></li>
-		        <li><a><img class='logos' src="assets/images/postgresql-logo.png" alt="PostgresQL" title='PostgresQL'></a></li>
-		        <li><a><img class='logos' src="assets/images/slack-logo.png" alt="Slack" title='Slack'></a></li>
-		        <li><a><img class='logos' src="assets/images/git-logo.png" alt="Git" title='Git'></a></li>
-		        <li><a><img class='logos' src="assets/images/github-logo.png" alt="Github" title='Github'></a></li>
-		      </ul>
-		      <ul class="nav navbar-nav navbar-right">
-		      	<li></li>
-		      	<li class="dropdown">
-    	      	<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><img class='logos' src='assets/images/envelope.png' alt='Email' title='My Email'><span class="caret"></span></a>
-      	    	<ul class="dropdown-menu">
-	        	    <li><a>Email:</a></li>
-  	        	  <li><a id="myEmail">david.riding.rails@gmail.com</a></li>
-    	        	<li><center><button class='btn btn-primary btn-xs' onclick="copyMyEmail('david.riding.rails@gmail.com');">Copy Email</button></center></li>
-	    	      </ul>
-        		</li>
-          	<li><a href='https://github.com/DavidPAdams' target='_blank'><img class='logos' src='assets/images/octocat.png' alt='https://github.com/DavidPAdams' title='Checkout My Code'></a></li>
-	          <li><a href='https://www.linkedin.com/in/david-on-rails' target='_blank'><img class='logos' src='assets/images/linkedin-logo.png' alt='https://www.linked.com/in/david-on-rails' title='Connect With Me'></a></li>
+		<nav class="navbar navbar-expand-md navbar-light bg-light navbar-fixed-top">
+      <a class='navbar-brand'><h2>David Adams</h2></a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+  		</button>
+	    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+	      <ul class="navbar-nav mr-auto">
+  	      <li class="nav-item active"><span class="navbar-text"><h5>Technologies: </h5></span></li>	      	
+    	    <li class="nav-item"><a><img class='logos' src="assets/images/ruby-logo.png" alt="Ruby" title='Ruby'></a></li>
+	        <li class="nav-item"><a><img class='logos' src="assets/images/rails-logo.png" alt="Rails" title='Rails'></a></li>
+	        <li class="nav-item"><a><img class='logos' src="assets/images/javascript-logo.png" alt="JavaScript" title='JavaScript'></a></li>
+	      	<li class="nav-item"><a><img class='logos' src='assets/images/java-logo.png' alt='Java' title='Java'></a></li>
+	      	<li class="nav-item"><a><img class='logos' src='assets/images/spring-boot-logo.png' alt='Spring Boot' title='Spring Boot'></a></li>
+	      	<li class="nav-item"><a><img class='logos' src='assets/images/junit5-logo.png' alt='JUnit5' title='JUnit5'></a></li>
+	      	<li class="nav-item"><a><img class='logos' src='assets/images/html-logo.png' alt='HTML5' title='HTML5'></a></li>
+	      	<li class="nav-item"><a><img class='logos' src='assets/images/css3-logo.png' alt='CSS3' title='CSS3'></a></li>
+	        <li class="nav-item"><a><img class='logos' src="assets/images/jquery-logo.png" alt="jQuery" title='jQuery'></a></li>
+	        <li class="nav-item"><a><img class='logos' src="assets/images/heroku-logo.png" alt="Heroku" title='Heroku'></a></li>
+	        <li class="nav-item"><a><img class='logos' src="assets/images/rspec-logo.png" alt="RSpec" title='RSpec'></a></li>
+	        <li class="nav-item"><a><img class='logos' src="assets/images/react-logo.png" alt="React" title='React'></a></li>
+	        <li class="nav-item"><a><img class='logos' src="assets/images/postgresql-logo.png" alt="PostgresQL" title='PostgresQL'></a></li>
+	        <li class="nav-item"><a><img class='logos' src="assets/images/slack-logo.png" alt="Slack" title='Slack'></a></li>
+	        <li class="nav-item"><a><img class='logos' src="assets/images/git-logo.png" alt="Git" title='Git'></a></li>
+	        <li class="nav-item"><a><img class='logos' src="assets/images/github-logo.png" alt="Github" title='Github'></a></li>
+	      </ul>
+	      <ul class="navbar-nav mr-auto">
+	      	<li class="nav-item dropdown">
+  	      	<a href="#" class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><img class='logos' src='assets/images/envelope.png' alt='Email' title='My Email'><span class="caret"></span></a>
+    	    	<ul class="dropdown-menu">
+        	    <li class="logos"><a>Email:</a></li>
+	        	  <li class="logos"><a id="myEmail">david.riding.rails@gmail.com</a></li>
+  	        	<li><center><button class='btn btn-primary btn-sm' onclick="copyMyEmail('david.riding.rails@gmail.com');">Copy Email</button></center></li>
+  	      	</ul>
+      		</li>
+        	<li class="nav-item"><a class="nav-link" href='https://github.com/DavidPAdams' target='_blank'><img class='logos' src='assets/images/octocat.png' alt='https://github.com/DavidPAdams' title='Checkout My Code'></a></li>
+          <li class="nav-item"><a class="nav-link" href='https://www.linkedin.com/in/david-on-rails' target='_blank'><img class='logos' src='assets/images/linkedin-logo.png' alt='https://www.linked.com/in/david-on-rails' title='Connect With Me'></a></li>
 		      </ul>
 	  	  </div>
-		  </div>
+
 		</nav>
 		<div class="container-fluid">
 			<div class="row">
 				<div class="col-md-2">
-					<img src="assets/images/david.jpg" alt="David Adams" class="mug img-rounded">
+					<img src="assets/images/david.jpg" alt="David Adams" class="mug rounded-lg">
 				</div>
 				<div class="col col-md-8">
 					<center><h1><strong><p>David Adams, PE</p><p>Ruby on Rails / Java Developer</p></strong></h1></center>
@@ -76,7 +69,7 @@
 								I am a self-starting, initially self-taught, Web Developer enthusiastic about Ruby on Rails, and Java! Recently, I completed a Java Digital Engineering full-stack web development program in Phoenix with Tech Talent South. 
 							</p>
 							<p>
-								After gaining an interest in web development, I took the opportunity to start a self-directed study of Ruby on Rails programming, along with HTML, CSS, JavaScript, and jQuery online through The Odin Project. I gained further knowledge and experience by participating in courses from Tech Talent South (TTS), including a Code Immersion Boot Camp, JavaScript API development, and RSpec testing in Rails. My latest course with TTS is a corporate-sponsored Digital Engineering Full-Stack Java Web Development program. 
+								After gaining an interest in web development, I took the opportunity to start a self-directed study of Ruby on Rails programming, along with HTML, CSS, JavaScript, and jQuery online through The Odin Project. I gained further knowledge and experience by participating in courses from Tech Talent South (TTS), including a Code Immersion Boot Camp, JavaScript API development, and RSpec testing in Rails. My latest course with TTS was a corporate-sponsored Digital Engineering Full-Stack Java Web Development program. 
 							</p>
 							<p>
 								Prior to making a career change to web development, I aquired detail-oriented, analytical, and strong problem-solving skills as a licensed Professional Engineer (PE). I worked successfully as a structural engineer for many years in Phoenix, AZ. Skills I developed as an engineer have strengthened my ability to analyze needs and develop effective code.
@@ -91,16 +84,16 @@
 					<div class="col well">
 						<h3>My Projects:</h3>
 						<ul>
-							<li><a class="btn btn-primary btn-xs" href="https://github.com/DavidPAdams/FP_Inspection_List" target="_blank" alt="https://github.com/DavidPAdams/FP_Inspection_List" title="A Spring Boot project app deployed on Heroku">Github</a><a class="btn btn-success btn-xs" href="https://radiant-temple-84480.herokuapp.com/" target="_blank" alt="https://radiant-temple-84480.herokuapp.com/" title="App using complex associations and forms">Inspections</a><strong> Insepction List </strong> An app to make an inspection list and keep track of status. Just an exercise, built with Java in Spring Boot and deployed on Heroku, (Please be patient when launching, heroku may need to spool up...)</li>
-							<li><a class="btn btn-primary btn-xs" href="https://github.com/DavidPAdams/flight-booker" target="_blank" alt="https://github.com/DavidPAdams/flight-booker" title="A project app using complex associations and forms">Github</a><a class="btn btn-success btn-xs" href="https://blooming-atoll-12670.herokuapp.com/" target="_blank" alt="https://blooming-atoll-12670.herokuapp.com/" title="App using complex associations and forms">Get Out of Town</a><strong> One-way Flight </strong> An app to schedule a one-way flight as an example of complex Rails associations and forms, (Please be patient when launching, heroku may need to spool up...)</li>
-							<li><a class="btn btn-primary btn-xs" href="https://github.com/DavidPAdams/members-only" target="_blank" alt="https://github.com/DavidPAdams/members-only" title="A project app with authorization built from scratch">Github</a><a class="btn btn-success btn-xs" href="https://intense-ravine-24316.herokuapp.com/" target="_blank" alt="https://intense-ravine-24316.herokuapp.com/" title="App with homemade authorization system">Launch</a><strong> Members-only message board </strong> An app to build my own authorization system from The Odin Project, (Please be patient when launching, heroku may need to spool up...)</li>
-							<li><a class="btn btn-primary btn-xs" href="https://github.com/DavidPAdams/Sinatra_exercises" target="_blank" alt="https://github.com/DavidPAdams/Sinatra_exercises" title="Mini apps with Sinatra">Github</a><a class="btn btn-success btn-xs" href="https://secret-beyond-20431.herokuapp.com" target="_blank" alt="https://secret-beyond-20431.herokuapp.com" title="Deployed mini apps with Sinatra">Launch</a><strong> Sinatra mini apps </strong> A set of mini apps made with Sinatra, adaptations of earlier programming assignments in Ruby from The Odin Project, (Please be patient when launching, heroku may need to spool up...)</li>
-							<li><a class="btn btn-primary btn-xs" href="https://github.com/DavidPAdams/Bookshelf" target="_blank" alt="https://github.com/DavidPAdams/Bookshelf" title="Bookshelf writing app">Github</a><a class="btn btn-success btn-xs" href="https://on-my-bookshelf.herokuapp.com/" target="_blank" alt="https://on-my-bookshelf.herokuapp.com/" title="Deployed writing aid app">Launch</a><strong> Bookshelf</strong> A story writing aid to keep story files and notes (pardon the dust, still under construction) Please be patient when launching, heroku may need to spool up...</li>
-							<li><a class="btn btn-primary btn-xs" href="https://github.com/DavidPAdams/RPS_JS" target="_blank" alt="https://github.com/DavidPAdams/RPS_JS" title="Rock-Paper-Scissors w/ Javascript Github repo">Github</a><a class="btn btn-warning btn-xs" href="rpsIndex.html" target="_blank" alt="rpsIndex.html" title="Rock-Paper-Scissors w/ Javascript">Take a Break</a><strong> Rock-Paper-Scissors</strong> A game against the computer with Javascript, no jQuery, took the long way on some things...</li>
-							<li><a class="btn btn-primary btn-xs" href="https://github.com/DavidPAdams/Openweather_api" target="_blank" alt="https://github.com/DavidPAdams/Openweather_api" title="Weather API Github repo">Github</a><a class="btn btn-success btn-xs" href="https://openweather-api.herokuapp.com/" target="_blank" alt="https://openweather-api.herokuapp.com/" title="Deployed Weather API">Launch</a><strong> Weather API</strong> - An API build using the Openweathermap.org API feed, TTS Code Immersion course, please be patient with the launch, heroku may need to spool up...</li>
-							<li><a class="btn btn-primary btn-xs" href="https://github.com/DavidPAdams/simple_blog" target="_blank" alt="https://github.com/DavidPAdams/simple_blog" title="Simple Blog App Github repo">Github</a><strong> Simple Blog</strong> - A simple blog application, TTS Code Immersion course</li>
-							<li><a class="btn btn-primary btn-xs" href="https://github.com/DavidPAdams/my_store" target="_blank" alt="https://github.com/DavidPAdams/my_store" title="eCommerce App Github repo">Github</a><strong> eCommerce App</strong> - An online shopping example application, TTS Code Immersion course</li>
-							<li><a class="btn btn-primary btn-xs" href="https://github.com/DavidPAdams/my_twitter" target="_blank" alt="https://github.com/DavidPAdams/my_twitter" title="My_Twitter Github repo">Github</a><strong> My_Twitter</strong> - A rebuild of twitter, from scratch, TTS Code Immersion course</li>
+							<li><a class="btn btn-info btn-sm" href="https://github.com/DavidPAdams/FP_Inspection_List" target="_blank" alt="https://github.com/DavidPAdams/FP_Inspection_List" title="A Spring Boot project app deployed on Heroku">Github</a><a class="btn btn-success btn-sm" href="https://radiant-temple-84480.herokuapp.com/" target="_blank" alt="https://radiant-temple-84480.herokuapp.com/" title="App using complex associations and forms">Inspections</a><strong> Insepction List </strong> An app to make an inspection list and keep track of status. Just an exercise, built with Java in Spring Boot and deployed on Heroku, (Please be patient when launching, heroku may need to spool up...)</li>
+							<li><a class="btn btn-primary btn-sm" href="https://github.com/DavidPAdams/flight-booker" target="_blank" alt="https://github.com/DavidPAdams/flight-booker" title="A project app using complex associations and forms">Github</a><a class="btn btn-success btn-sm" href="https://blooming-atoll-12670.herokuapp.com/" target="_blank" alt="https://blooming-atoll-12670.herokuapp.com/" title="App using complex associations and forms">Get Out of Town</a><strong> One-way Flight </strong> An app to schedule a one-way flight as an example of complex Rails associations and forms, (Please be patient when launching, heroku may need to spool up...)</li>
+							<li><a class="btn btn-primary btn-sm" href="https://github.com/DavidPAdams/members-only" target="_blank" alt="https://github.com/DavidPAdams/members-only" title="A project app with authorization built from scratch">Github</a><a class="btn btn-success btn-sm" href="https://intense-ravine-24316.herokuapp.com/" target="_blank" alt="https://intense-ravine-24316.herokuapp.com/" title="App with homemade authorization system">Launch</a><strong> Members-only message board </strong> An app to build my own authorization system from The Odin Project, (Please be patient when launching, heroku may need to spool up...)</li>
+							<li><a class="btn btn-primary btn-sm" href="https://github.com/DavidPAdams/Sinatra_exercises" target="_blank" alt="https://github.com/DavidPAdams/Sinatra_exercises" title="Mini apps with Sinatra">Github</a><a class="btn btn-success btn-sm" href="https://secret-beyond-20431.herokuapp.com" target="_blank" alt="https://secret-beyond-20431.herokuapp.com" title="Deployed mini apps with Sinatra">Launch</a><strong> Sinatra mini apps </strong> A set of mini apps made with Sinatra, adaptations of earlier programming assignments in Ruby from The Odin Project, (Please be patient when launching, heroku may need to spool up...)</li>
+							<li><a class="btn btn-primary btn-sm" href="https://github.com/DavidPAdams/Bookshelf" target="_blank" alt="https://github.com/DavidPAdams/Bookshelf" title="Bookshelf writing app">Github</a><a class="btn btn-success btn-sm" href="https://on-my-bookshelf.herokuapp.com/" target="_blank" alt="https://on-my-bookshelf.herokuapp.com/" title="Deployed writing aid app">Launch</a><strong> Bookshelf</strong> A story writing aid to keep story files and notes (pardon the dust, still under construction) Please be patient when launching, heroku may need to spool up...</li>
+							<li><a class="btn btn-primary btn-sm" href="https://github.com/DavidPAdams/RPS_JS" target="_blank" alt="https://github.com/DavidPAdams/RPS_JS" title="Rock-Paper-Scissors w/ Javascript Github repo">Github</a><a class="btn btn-warning btn-sm" href="rpsIndex.html" target="_blank" alt="rpsIndex.html" title="Rock-Paper-Scissors w/ Javascript">Take a Break</a><strong> Rock-Paper-Scissors</strong> A game against the computer with Javascript, no jQuery, took the long way on some things...</li>
+							<li><a class="btn btn-primary btn-sm" href="https://github.com/DavidPAdams/Openweather_api" target="_blank" alt="https://github.com/DavidPAdams/Openweather_api" title="Weather API Github repo">Github</a><a class="btn btn-success btn-sm" href="https://openweather-api.herokuapp.com/" target="_blank" alt="https://openweather-api.herokuapp.com/" title="Deployed Weather API">Launch</a><strong> Weather API</strong> - An API build using the Openweathermap.org API feed, TTS Code Immersion course, please be patient with the launch, heroku may need to spool up...</li>
+							<li><a class="btn btn-primary btn-sm" href="https://github.com/DavidPAdams/simple_blog" target="_blank" alt="https://github.com/DavidPAdams/simple_blog" title="Simple Blog App Github repo">Github</a><strong> Simple Blog</strong> - A simple blog application, TTS Code Immersion course</li>
+							<li><a class="btn btn-primary btn-sm" href="https://github.com/DavidPAdams/my_store" target="_blank" alt="https://github.com/DavidPAdams/my_store" title="eCommerce App Github repo">Github</a><strong> eCommerce App</strong> - An online shopping example application, TTS Code Immersion course</li>
+							<li><a class="btn btn-primary btn-sm" href="https://github.com/DavidPAdams/my_twitter" target="_blank" alt="https://github.com/DavidPAdams/my_twitter" title="My_Twitter Github repo">Github</a><strong> My_Twitter</strong> - A rebuild of twitter, from scratch, TTS Code Immersion course</li>
 						</ul>
 					</div>
 				</div>
@@ -115,8 +108,10 @@
 			</div>
 		</div>
 	</div>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-  <script src='assets/javascripts/dapage.js'></script>
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  <script src="assets/javascripts/dapage.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/react/15.4.2/react.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/react/15.4.2/react-dom.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/babel-standalone/6.21.1/babel.min.js"></script>
@@ -195,7 +190,7 @@
 
 		    return (
 		      <div>
-		        <button className="btn btn-info btn-xs" onClick={this.props.newPhraseSet}> Words to Consider </button>
+		        <button className="btn btn-info btn-sm" title="Component powered by React" onClick={this.props.newPhraseSet}> Words to Consider </button>
 		        <p>{this.props.propData.bitA + this.props.propData.bitB + this.props.propData.bitC + this.props.propData.bitD + '  - ' + this.props.propData.bitY}</p>
 		      </div>
 		    );
