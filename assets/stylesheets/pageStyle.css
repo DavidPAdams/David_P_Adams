@@ -1,5 +1,56 @@
+body, html {
+  height: 100%;
+  margin: 0;
+  font-family: Arial;
+}
+
+body {
+  background: transparent;
+}
+
+div.bg {
+  background: url("../images/caribbean.jpg") no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  color: #000;  
+}
+
+div.col {
+  background-color: rgba(255, 255, 255, 0.0);
+  border-radius: 20px;
+  padding: 10px;
+  margin: 10px;
+  color: navy;
+  border: none;
+}
+
+.logos {
+  height: 40px;
+  padding: 5px;
+}
+
+p#objective {
+  font-size: 1.15em;
+  line-height: 1.5em;
+  color: navy;
+}
+
+p#background {
+  line-height: 1.5em;
+}
+
+.mug {
+  margin-top: 15px;
+  max-height: 200px;
+}
 
 .pick {
   height: 80px;
   padding: 15px;
+}
+
+#root {
+  font-size: 1.25em;
 }
